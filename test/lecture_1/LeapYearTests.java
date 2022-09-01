@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class LeapYearTests {
     @Test
     public void everyFourthYearIsLeapYear() {
-        Assertions.assertTrue(LeapYearValidator.isLeapYear(2001));
+        Assertions.assertFalse(LeapYearValidator.isLeapYear(2100));
+        Assertions.assertTrue(LeapYearValidator.isLeapYear(2000));
+        Assertions.assertTrue(LeapYearValidator.isLeapYear(2004));
     }
 }
