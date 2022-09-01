@@ -12,4 +12,10 @@ public class LeapYearTests {
         Assertions.assertTrue(LeapYearValidator.isLeapYear(2000));
         Assertions.assertTrue(LeapYearValidator.isLeapYear(2004));
     }
+
+    @Test
+    public void everyFifthYearIsLeapYear() {
+        Assertions.assertFalse((LeapYearValidator.isLeapYear(2102)));
+        Assertions.assertFalse((LeapYearValidator.isLeapYear(2222)));
+    }
 }
