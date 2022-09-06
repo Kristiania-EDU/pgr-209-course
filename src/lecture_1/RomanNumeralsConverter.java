@@ -20,8 +20,7 @@ public class RomanNumeralsConverter {
     }};
 
     public static String convertToRomanNumerals(int number) {
-        if(number <= 0)
-            return "";
+        if(number <= 0) return "";
 
         var result = "";
         var finished = false;
